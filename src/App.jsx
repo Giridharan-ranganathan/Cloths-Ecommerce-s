@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import Home from './Home';
 import ViewCart from './Cart';
 import Header from './Header';
+import Demo from './DemoPage';
+import Bannertwo from './bannertwo/Bannertwo';
+import Category from './Category/Category';
+import Footer from './footer/footer'
+import AllProducts from './AllProducts/AllProducts';
+import AllProductsData from './AllProducts_data/AllProducts_data'
+import Layout from './layout';
 import { createContext } from 'react'; 
+
 
 export const CartContext = createContext(); 
 
@@ -15,12 +22,16 @@ function App() {
     <CartContext.Provider value={{ cart, setCart }}>
       <BrowserRouter>
         <Header cart={cart} />
-        <div>
           <Routes>
-            <Route path='/' element={<Home />} /> 
+            <Route path='/' element={<Layout />}/> 
+            <Route path='Category.jsx' element={<Category />} /> 
             <Route path='/cart.jsx' element={<ViewCart />} /> 
+            <Route path='/DemoPage.jsx' element={<Demo/>} /> 
+            <Route path='AllProducts.jsx' element={<AllProducts/>}/>
+            <Route path='/Bannertwo.jsx' element={<Bannertwo />} /> 
+            <Route path='/AllProducts_data.jsx' element={<AllProductsData/>}/>
           </Routes>
-        </div>
+          <Footer/>
       </BrowserRouter>
     </CartContext.Provider>
   );

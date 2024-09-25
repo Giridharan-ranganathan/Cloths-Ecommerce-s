@@ -71,9 +71,9 @@ useEffect(() => {
 
   return (
     <>
-<div className='mainBanner mb-10'>
-  <h1 className='bannerSpanOne'>Lets walk with u r style </h1>
-  <p className='bannerSpanTwo'>EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS</p>
+<div className='mb-10'>
+  {/* <h1 className='bannerSpanOne'>Lets walk with u r style </h1>
+  <p className='bannerSpanTwo'>EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS</p> */}
 </div>
 <div className='running-Banner'></div>
 <div className='demo mb-10'>
@@ -85,7 +85,7 @@ useEffect(() => {
 ))}
 </div>
 <div className='footer mb-10'>
-    <h3>Chat Me @giri</h3>
+    {/* <h3>Chat Me @giri</h3> */}
 </div>
 
     </>
