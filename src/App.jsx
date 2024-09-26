@@ -9,7 +9,7 @@ import Category from './Category/Category';
 import Footer from './footer/footer'
 import AllProducts from './AllProducts/AllProducts';
 import AllProductsData from './AllProducts_data/AllProducts_data'
-import Layout from './layout';
+import Layout from './Layout';
 import { createContext } from 'react'; 
 
 
