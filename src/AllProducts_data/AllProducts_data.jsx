@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./AllProducts_data.module.scss";
-import { ProductCard } from "../ProductCard";
+// import { ProductCard } from "../ProductCard";
 
 const AllProductsData = () => {
   const allProductsData = [

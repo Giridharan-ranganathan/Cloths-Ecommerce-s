@@ -10,6 +10,7 @@ import Footer from './footer/footer'
 import AllProducts from './AllProducts/AllProducts';
 import AllProductsData from './AllProducts_data/AllProducts_data'
 import Layout from './Layout';
+import NewFashionManiPage from './newFashion/newFashionMainPage'
 import { createContext } from 'react'; 
 
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='AllProducts.jsx' element={<AllProducts/>}/>
             <Route path='/Bannertwo.jsx' element={<Bannertwo />} /> 
             <Route path='/AllProducts_data.jsx' element={<AllProductsData/>}/>
+            <Route path='/newFashionMainPage.jsx' element={<NewFashionManiPage/>}></Route>
           </Routes>
           <Footer/>
       </BrowserRouter>
